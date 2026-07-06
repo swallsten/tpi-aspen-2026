@@ -4,5 +4,5 @@
    here (see EDITOR-SETUP.md), then commit this file. */
 window.TPI_DATA = {
   speakersCsvUrl: "",
-  agendaCsvUrl: ""
+  agendaCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTdPMVhjmbNqjQrjBSTPkCBOdyinQJLE7IilXh4bsh2eu5JKesp-pK6B45sJnELyKwhC1W54q4OyP6u/pub?output=csv"
 };
