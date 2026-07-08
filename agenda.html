@@ -175,8 +175,20 @@ function sessionHTML(s){
  +(s.link?'<p style="margin:12px 0 0;"><a href="'+s.link+'" target="_top" style="font:600 13px/1.4 \'Libre Franklin\';letter-spacing:.02em;color:#9a2e1e;text-decoration:none;border-bottom:1px solid #d9b3a8;padding-bottom:2px;">See ideas for the free afternoon &rarr;</a></p>':'')
  +sp+'</div></div>';
 }
+var WKMAP={sun:'Sunday',mon:'Monday',tue:'Tuesday',wed:'Wednesday',thu:'Thursday',fri:'Friday',sat:'Saturday'};
+function fullWeekday(d){
+ var hay=((d.weekday||'')+' '+(d.label||'')+' '+(d.dayDate||'')+' '+(d.date||'')).toLowerCase();
+ var m=hay.match(/(sun|mon|tue|wed|thu|fri|sat)/);
+ return m?WKMAP[m[1]]:((d.label||'').trim());
+}
+function shortDate(d){
+ var hay=(d.date||d.dayDate||d.label||'');
+ var m=hay.match(/([A-Z][a-z]{2,}\.?\s+\d{1,2})/);
+ if(m)return m[1].replace('.','');
+ return hay.replace(/^\s*[A-Za-z]+\s*[\u00b7\u2013\u2014-]\s*/,'').trim()||hay;
+}
 function render(){
- const tabs=[{key:'all',label:'All Days',date:'Full program'}].concat(DATA.map((d,i)=>({key:i,label:d.label,date:(d.dayDate||(d.weekday+' \u00b7 '+d.date))})));
+ const tabs=[{key:'all',label:'All Days',date:'Full program'}].concat(DATA.map((d,i)=>({key:i,label:fullWeekday(d),date:shortDate(d)})));
  $('agtabs').innerHTML=tabs.map(t=>{
   const a=(day===t.key);
   return '<button data-k="'+t.key+'" style="display:flex;flex-direction:column;gap:5px;align-items:flex-start;padding:16px 24px;cursor:pointer;border-radius:3px;border:1px solid '+(a?'#9a2e1e':'#ddd6c6')+';background:'+(a?'#9a2e1e':'transparent')+';">'
@@ -187,8 +199,8 @@ function render(){
  const groups = day==='all' ? DATA : [DATA[day]];
  $('agbody').innerHTML=groups.map(d=>{
   const head = day==='all' ? '<div style="display:flex;align-items:baseline;gap:16px;padding:44px 0 10px;margin-top:12px;border-bottom:2px solid #23211b;">'
-   +'<span style="font:800 13px/1 \'Libre Franklin\';letter-spacing:.16em;text-transform:uppercase;color:#9a2e1e;">'+d.label+'</span>'
-   +'<span style="font:500 22px/1 \'Newsreader\';color:#57564d;">'+(d.dayDate||(d.weekday+' \u00b7 '+d.date))+'</span></div>' : '';
+   +'<span style="font:800 13px/1 \'Libre Franklin\';letter-spacing:.16em;text-transform:uppercase;color:#9a2e1e;">'+fullWeekday(d)+'</span>'
+   +'<span style="font:500 22px/1 \'Newsreader\';color:#57564d;">'+shortDate(d)+'</span></div>' : '';
   return head + d.sessions.map(sessionHTML).join('');
  }).join('');
 }

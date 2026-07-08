@@ -25,9 +25,9 @@ a{color:inherit;}
 .hd .sub{font:400 17px/1.5 'Newsreader';color:#4a4840;margin:0;}
 
 .switch{position:sticky;top:0;z-index:30;background:var(--bg);display:flex;gap:8px;padding:14px 16px;border-bottom:1px solid var(--line);}
-.switch button{flex:1;min-width:0;border:1px solid #ddd6c6;background:transparent;border-radius:9px;padding:9px 4px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:3px;-webkit-tap-highlight-color:transparent;}
-.switch .wd{font:800 12px/1 'Libre Franklin';letter-spacing:.1em;text-transform:uppercase;color:var(--red);white-space:nowrap;}
-.switch .dt{font:500 13px/1 'Newsreader';color:var(--muted);white-space:nowrap;}
+.switch button{flex:1;min-width:0;border:1px solid #ddd6c6;background:transparent;border-radius:9px;padding:9px 4px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:3px;overflow:hidden;-webkit-tap-highlight-color:transparent;}
+.switch .wd{font:800 12px/1 'Libre Franklin';letter-spacing:.08em;text-transform:uppercase;color:var(--red);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.switch .dt{font:500 12px/1 'Newsreader';color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;margin-top:1px;}
 .switch button.on{background:var(--red);border-color:var(--red);}
 .switch button.on .wd{color:#f5f1e8;}
 .switch button.on .dt{color:rgba(245,241,232,.85);}
@@ -111,12 +111,19 @@ var MUTED=['','Break','Reception','End'];
 var $=function(id){return document.getElementById(id);};
 var day='all';
 
-function abbr(label){
- var wk={sunday:'Sun',monday:'Mon',tuesday:'Tue',wednesday:'Wed',thursday:'Thu',friday:'Fri',saturday:'Sat'};
- var k=(label||'').trim().toLowerCase();
- return wk[k]||((label||'').trim().slice(0,3));
+var WKMAP={sun:'Sunday',mon:'Monday',tue:'Tuesday',wed:'Wednesday',thu:'Thursday',fri:'Friday',sat:'Saturday'};
+function fullWeekday(d){
+ var hay=((d.weekday||'')+' '+(d.label||'')+' '+(d.dayDate||'')+' '+(d.date||'')).toLowerCase();
+ var m=hay.match(/(sun|mon|tue|wed|thu|fri|sat)/);
+ return m?WKMAP[m[1]]:((d.label||'').trim());
 }
-function dayDateOf(d){return d.dayDate||(d.date||((d.weekday?d.weekday+' \u00b7 ':'')+(d.date||''))||'');}
+function shortDate(d){
+ var hay=(d.date||d.dayDate||d.label||'');
+ var m=hay.match(/([A-Z][a-z]{2,}\.?\s+\d{1,2})/);
+ if(m)return m[1].replace('.','');
+ return hay.replace(/^\s*[A-Za-z]+\s*[\u00b7\u2013\u2014-]\s*/,'').trim()||hay;
+}
+function abbr3(s){return (s||'').trim().slice(0,3);}
 
 function sessionHTML(s){
  var muted=MUTED.indexOf(s.format)!==-1, isBk=s.format==='Breakout';
@@ -142,7 +149,7 @@ function sessionHTML(s){
 
 function render(){
  var tabs=[{k:'all',wd:'All',dt:'3 days'}].concat(DATA.map(function(d,i){
-  return {k:i,wd:abbr(d.label),dt:(d.date||dayDateOf(d))};
+  return {k:i,wd:abbr3(fullWeekday(d)),dt:shortDate(d)};
  }));
  $('switch').innerHTML=tabs.map(function(t){
   var on=(day===t.k);
@@ -159,7 +166,7 @@ function render(){
  });
  var groups=(day==='all')?DATA:[DATA[day]];
  $('list').innerHTML=groups.map(function(d){
-  var head=(day==='all')?'<div class="dayh"><span class="wd">'+esc(d.label)+'</span><span class="dt">'+esc(dayDateOf(d))+'</span></div>':'';
+  var head=(day==='all')?'<div class="dayh"><span class="wd">'+esc(fullWeekday(d))+'</span><span class="dt">'+esc(shortDate(d))+'</span></div>':'';
   return head+d.sessions.map(sessionHTML).join('');
  }).join('');
 }
