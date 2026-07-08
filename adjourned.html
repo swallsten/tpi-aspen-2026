@@ -11,6 +11,16 @@
 <style>
 html{margin:0;padding:0;background:#1c1b16;}body{margin:0;padding:0;background:#f5f1e8;}
 a{color:inherit;}
+.alink{color:#9a2e1e;text-decoration:none;border-bottom:1px solid #d9b3a8;}
+.alink:hover{border-bottom-color:#9a2e1e;}
+.clink{display:inline-flex;align-items:center;gap:6px;font:600 13px/1.35 'Libre Franklin';letter-spacing:.02em;color:#9a2e1e;text-decoration:none;margin-top:16px;}
+.clink:hover{text-decoration:underline;}
+.hlist{margin:0;padding:0;list-style:none;}
+.hlist li{padding:15px 0;border-top:1px solid #e2dccd;}
+.hlist li:first-child{border-top:none;padding-top:4px;}
+.hname{font:600 19px/1.25 'Newsreader';color:#23211b;text-decoration:none;}
+.hname:hover{color:#9a2e1e;}
+.hmeta{font:400 14.5px/1.55 'Libre Franklin';color:#57564d;margin:5px 0 0;}
 .fnav a{color:inherit;text-decoration:none;}
 .fnav a:hover{text-decoration:underline;color:#f5f1e8;}
 #tpiburger{display:none;background:none;border:1px solid #d8cfbe;border-radius:2px;padding:9px 11px;cursor:pointer;}
@@ -109,6 +119,7 @@ a{color:inherit;}
           <div style="padding: 28px 32px 32px;">
             <h3 style="font: 600 22px/1.2 'Newsreader'; margin: 0 0 12px;">Fly fishing the Roaring Fork</h3>
             <p style="font: 400 15px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">The Roaring Fork and nearby Fryingpan are Gold Medal trout waters, and August is prime season. The forum's signature pastime, waders optional, opinions mandatory.</p>
+            <a class="clink" href="https://aspenchamber.org/explore/recreation/fishing/" target="_blank" rel="noopener">About the Gold Medal waters &rarr;</a>
           </div>
         </div>
         <div style="background: #fbf8f1; display: flex; flex-direction: column;">
@@ -117,7 +128,8 @@ a{color:inherit;}
           </div>
           <div style="padding: 28px 32px 32px;">
             <h3 style="font: 600 22px/1.2 'Newsreader'; margin: 0 0 12px;">The Maroon Bells</h3>
-            <p style="font: 400 15px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">Twenty minutes up Maroon Creek Road, and possibly the most-photographed mountains in North America. The hero image on our homepage, go see the original.</p>
+            <p style="font: 400 15px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">Possibly the most photographed mountains in North America, up Maroon Creek Road. Reservations are required to visit by shuttle or car from May to October, so book ahead. The hero image on our homepage, go see the original.</p>
+            <a class="clink" href="https://aspenchamber.org/explore/maroon-bells/reservations/" target="_blank" rel="noopener">Reserve your visit &rarr;</a>
           </div>
         </div>
         <div style="background: #fbf8f1; display: flex; flex-direction: column;">
@@ -125,6 +137,7 @@ a{color:inherit;}
           <div style="padding: 28px 32px 32px;">
             <h3 style="font: 600 22px/1.2 'Newsreader'; margin: 0 0 12px;">The Silver Queen Gondola</h3>
             <p style="font: 400 15px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">A fifteen-minute ride from downtown to the 11,212-foot summit of Aspen Mountain. The one place in town with a better view than the conference room.</p>
+            <a class="clink" href="https://www.aspensnowmass.com/visit/tickets-and-passes/sightseeing-and-tickets/summer" target="_blank" rel="noopener">Tickets and summer hours &rarr;</a>
           </div>
         </div>
       </div>
@@ -132,6 +145,74 @@ a{color:inherit;}
         <span style="width: 22px; height: 2px; background: #9a2e1e;"></span>
         <span style="font: 400 15px/1.5 'Newsreader'; font-style: italic; color: #6b6a5f;">August in Aspen: warm days, crisp evenings, the odd afternoon shower. And remember, you're at 8,000 feet. The debate shouldn't be the only thing that takes your breath away. Drink water.</span>
       </div>
+    </div>
+  </div>
+
+  <!-- more to do -->
+  <div class="mpad" style="max-width: 1200px; margin: 0 auto; padding: 64px 48px 4px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+      <h2 style="font: 500 38px/1 'Newsreader'; letter-spacing: -0.01em; margin: 0;">If you have more time</h2>
+      <span style="font: 400 16px/1.4 'Newsreader'; font-style: italic; color: #8a887f;">Arrive Sunday or stay through Wednesday and the day opens up.</span>
+    </div>
+    <p style="font: 400 17px/1.6 'Libre Franklin'; color: #57564d; margin: 0; max-width: 730px;">Four hours on Monday is enough for a short hike, a gondola ride, or an hour downtown. The bigger days are worth building in around the edges of the program. August afternoons bring the odd thunderstorm, so start anything long earlier in the day.</p>
+  </div>
+
+  <!-- hikes -->
+  <div class="mpad" style="max-width: 1200px; margin: 0 auto; padding: 32px 48px 8px;">
+    <div class="g2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+      <div>
+        <h3 style="font: 700 13px/1 'Libre Franklin'; letter-spacing: 0.16em; text-transform: uppercase; color: #9a2e1e; margin: 0 0 4px;">Close to town</h3>
+        <p style="font: 400 15px/1.5 'Newsreader'; font-style: italic; color: #8a887f; margin: 0 0 6px;">Short enough for the Monday afternoon.</p>
+        <ul class="hlist">
+          <li><a class="hname" href="https://www.aspensnowmass.com/discover/experiences/guides/5-hikes-with-the-best-views-around-aspen" target="_blank" rel="noopener">Smuggler Mountain</a><p class="hmeta">About 3 miles round trip on a dirt road to an observation deck with the classic town view. The local lunch-hour climb.</p></li>
+          <li><a class="hname" href="https://www.aspensnowmass.com/discover/experiences/guides/5-hikes-with-the-best-views-around-aspen" target="_blank" rel="noopener">Ute Trail</a><p class="hmeta">Short and steep, roughly a mile to the overlook. Keep going to the summit and ride the gondola down.</p></li>
+          <li><a class="hname" href="https://www.alltrails.com/us/colorado/aspen/easy" target="_blank" rel="noopener">Rio Grande Trail</a><p class="hmeta">Paved and flat along the Roaring Fork. Walk or bike as far as you like, then turn back.</p></li>
+          <li><a class="hname" href="https://aspenchamber.org/explore/recreation/hiking/hiking-trails/" target="_blank" rel="noopener">Hunter Creek</a><p class="hmeta">A moderate wooded valley that passes old mining cabins from Aspen's silver days.</p></li>
+          <li><a class="hname" href="https://www.alltrails.com/us/colorado/aspen/easy" target="_blank" rel="noopener">The Grottos</a><p class="hmeta">Easy, with a waterfall, an ice cave, and rock formations. The small lot fills by late morning.</p></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font: 700 13px/1 'Libre Franklin'; letter-spacing: 0.16em; text-transform: uppercase; color: #9a2e1e; margin: 0 0 4px;">Bigger days</h3>
+        <p style="font: 400 15px/1.5 'Newsreader'; font-style: italic; color: #8a887f; margin: 0 0 6px;">Better with an early start or a spare morning.</p>
+        <ul class="hlist">
+          <li><a class="hname" href="https://www.aspensnowmass.com/discover/experiences/guides/hiking-guide" target="_blank" rel="noopener">Cathedral Lake</a><p class="hmeta">About 5.6 miles round trip past waterfalls to a clear alpine lake beneath the cliffs.</p></li>
+          <li><a class="hname" href="https://www.aspensnowmass.com/discover/experiences/guides/hiking-guide" target="_blank" rel="noopener">American Lake</a><p class="hmeta">About 6.8 miles round trip, climbing through aspen and evergreen to alpine water.</p></li>
+          <li><a class="hname" href="https://aspenchamber.org/plan-trip/trip-highlights/maroon-bells" target="_blank" rel="noopener">Crater Lake at the Maroon Bells</a><p class="hmeta">About 3.6 miles round trip from Maroon Lake. A reservation is required, see the note below.</p></li>
+        </ul>
+        <p style="font: 400 14px/1.6 'Libre Franklin'; color: #6b6a5f; margin: 18px 0 0;">Trailhead directions and maps: <a class="alink" href="https://aspenchamber.org/explore/recreation/hiking/hiking-trails/" target="_blank" rel="noopener">Aspen Chamber</a> and <a class="alink" href="https://www.alltrails.com/us/colorado/aspen" target="_blank" rel="noopener">AllTrails</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- in town and beyond -->
+  <div class="mpad" style="max-width: 1200px; margin: 0 auto; padding: 44px 48px 64px;">
+    <h3 style="font: 700 13px/1 'Libre Franklin'; letter-spacing: 0.16em; text-transform: uppercase; color: #9a2e1e; margin: 0 0 20px;">In town and beyond</h3>
+    <div class="g4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #ddd6c6; border: 1px solid #ddd6c6;">
+      <div style="background: #fbf8f1; padding: 26px 26px 28px;">
+        <h4 style="font: 600 20px/1.2 'Newsreader'; margin: 0 0 10px;">Aspen Music Festival</h4>
+        <p style="font: 400 14.5px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">Runs July 1 to August 23, so concerts fall right across your dates. Sit free on the lawn outside the Klein Music Tent, or buy a seat.</p>
+        <a class="clink" href="https://www.aspenmusicfestival.com/events/calendar/" target="_blank" rel="noopener">See the concert calendar &rarr;</a>
+      </div>
+      <div style="background: #fbf8f1; padding: 26px 26px 28px;">
+        <h4 style="font: 600 20px/1.2 'Newsreader'; margin: 0 0 10px;">Aspen Art Museum</h4>
+        <p style="font: 400 14.5px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">Free admission and a rooftop terrace over downtown. Closed Mondays, so make it a Sunday or Wednesday stop rather than the Monday break.</p>
+        <a class="clink" href="https://www.aspenartmuseum.org" target="_blank" rel="noopener">Plan a visit &rarr;</a>
+      </div>
+      <div style="background: #fbf8f1; padding: 26px 26px 28px;">
+        <h4 style="font: 600 20px/1.2 'Newsreader'; margin: 0 0 10px;">Bike the valley</h4>
+        <p style="font: 400 14.5px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">The paved Rio Grande Trail follows the river out of town, and We-cycle share bikes are free for the first 30 minutes.</p>
+        <a class="clink" href="https://aspenchamber.org/blog/10-free-things-take-advantage-summer/" target="_blank" rel="noopener">How We-cycle works &rarr;</a>
+      </div>
+      <div style="background: #fbf8f1; padding: 26px 26px 28px;">
+        <h4 style="font: 600 20px/1.2 'Newsreader'; margin: 0 0 10px;">Scenic drives</h4>
+        <p style="font: 400 14.5px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">Independence Pass crosses the Continental Divide at 12,095 feet, with the Ashcroft and Independence ghost towns along the way.</p>
+        <a class="clink" href="https://aspenchamber.org/plan-trip/itineraries/free-or-nearly-free/" target="_blank" rel="noopener">Explore the drives &rarr;</a>
+      </div>
+    </div>
+
+    <div style="margin-top: 28px; border: 1px solid #e0c9b0; background: #f7ecdf; border-radius: 4px; padding: 20px 24px; display: flex; gap: 16px; align-items: flex-start;">
+      <span style="flex: 0 0 auto; margin-top: 3px; font: 800 11px/1 'Libre Franklin'; letter-spacing: 0.14em; text-transform: uppercase; color: #9a2e1e;">Plan ahead</span>
+      <p style="font: 400 15px/1.6 'Libre Franklin'; color: #57564d; margin: 0;">The Maroon Bells require a reservation from May through October. You cannot drive up on the day without one. Book a shuttle seat from Aspen Highlands or a parking reservation at <a class="alink" href="https://www.visitmaroonbells.com/" target="_blank" rel="noopener">visitmaroonbells.com</a>. There is no cell service at the lake, so reserve before you leave town.</p>
     </div>
   </div>
 
