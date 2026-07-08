@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agenda · TPI Aspen Forum 2026</title>
+<meta name="description" content="Mobile program for the 2026 TPI Aspen Forum: keynotes, fireside chats, and panels on AI and energy, spectrum, antitrust, quantum, cybersecurity, and the space economy.">
+<meta name="theme-color" content="#f5f1e8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f1e8;--ink:#23211b;--muted:#6b6a5f;--faint:#8a887f;--red:#9a2e1e;--line:#e2dccd;--line2:#efe7d6;}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--bg);color:var(--ink);font-family:'Libre Franklin',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;}
+.wrap{max-width:660px;margin:0 auto;padding-bottom:calc(40px + env(safe-area-inset-bottom));}
+a{color:inherit;}
+
+.hd{padding:calc(26px + env(safe-area-inset-top)) 20px 6px;}
+.eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px;}
+.eyebrow .k{font:700 12px/1 'Libre Franklin';letter-spacing:.2em;text-transform:uppercase;color:var(--red);}
+.eyebrow .badge{font:700 9px/1 'Libre Franklin';letter-spacing:.14em;text-transform:uppercase;color:var(--faint);border:1px solid #d8cfbe;padding:5px 9px;border-radius:100px;}
+.hd h1{font:500 46px/1.02 'Newsreader';letter-spacing:-.02em;margin:0 0 10px;}
+.hd .sub{font:400 17px/1.5 'Newsreader';color:#4a4840;margin:0;}
+
+.switch{position:sticky;top:0;z-index:30;background:var(--bg);display:flex;gap:8px;padding:14px 16px;border-bottom:1px solid var(--line);}
+.switch button{flex:1;min-width:0;border:1px solid #ddd6c6;background:transparent;border-radius:9px;padding:9px 4px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:3px;-webkit-tap-highlight-color:transparent;}
+.switch .wd{font:800 12px/1 'Libre Franklin';letter-spacing:.1em;text-transform:uppercase;color:var(--red);white-space:nowrap;}
+.switch .dt{font:500 13px/1 'Newsreader';color:var(--muted);white-space:nowrap;}
+.switch button.on{background:var(--red);border-color:var(--red);}
+.switch button.on .wd{color:#f5f1e8;}
+.switch button.on .dt{color:rgba(245,241,232,.85);}
+
+.dayh{margin:26px 20px 0;padding-bottom:8px;border-bottom:2px solid var(--ink);display:flex;align-items:baseline;gap:10px;}
+.dayh .wd{font:800 12px/1 'Libre Franklin';letter-spacing:.16em;text-transform:uppercase;color:var(--red);}
+.dayh .dt{font:500 18px/1 'Newsreader';color:var(--muted);}
+
+.sess{padding:18px 20px;border-bottom:1px solid var(--line);}
+.sess .time{font:600 15px/1.3 'Libre Franklin';color:var(--ink);}
+.sess.bk .time{font:700 11px/1.3 'Libre Franklin';letter-spacing:.12em;text-transform:uppercase;color:#6f6a3e;}
+.sess .fmt{font:700 10px/1 'Libre Franklin';letter-spacing:.16em;text-transform:uppercase;margin:9px 0 0;}
+.sess h3{font:500 22px/1.24 'Newsreader';letter-spacing:-.01em;margin:8px 0 0;}
+.sess.muted h3{font-size:18px;color:#6b6a5f;}
+.sess .desc{font:400 15px/1.5 'Newsreader';font-style:italic;color:#8a7a5f;margin:9px 0 0;}
+.sess .lnk{margin:12px 0 0;}
+.sess .lnk a{font:600 13px/1.4 'Libre Franklin';letter-spacing:.02em;color:var(--red);text-decoration:none;border-bottom:1px solid #d9b3a8;padding-bottom:2px;}
+.sp{margin-top:16px;display:flex;flex-direction:column;gap:13px;}
+.sp .nm{font:600 16px/1.3 'Newsreader';color:var(--ink);}
+.sp .rl{font:400 13.5px/1.45 'Libre Franklin';color:var(--muted);margin-top:2px;}
+.tag{display:inline-block;font:700 9px/1 'Libre Franklin';letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;border-radius:3px;margin-left:7px;vertical-align:1px;}
+.tag.mod{background:var(--line2);color:#6f6a3e;}
+.tag.pend{background:#f3ddd7;color:#9a2e1e;}
+
+.foot{margin:30px 20px 0;padding-top:22px;border-top:1px solid var(--line);}
+.foot p{font:400 14px/1.6 'Newsreader';font-style:italic;color:var(--faint);margin:0 0 18px;}
+.foot .links{display:flex;gap:10px;flex-wrap:wrap;}
+.foot .links a{flex:1;min-width:140px;text-align:center;text-decoration:none;font:600 14px/1 'Libre Franklin';padding:14px 16px;border-radius:100px;}
+.foot .links a.reg{background:var(--red);color:#f5f1e8;}
+.foot .links a.alt{border:1.5px solid #d8cfbe;color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hd">
+    <div class="eyebrow">
+      <span class="k">TPI Aspen Forum · 2026</span>
+      <span class="badge">Subject to change</span>
+    </div>
+    <h1>Agenda</h1>
+    <p class="sub">August 16&ndash;18, 2026 · St. Regis Aspen</p>
+  </div>
+
+  <div class="switch" id="switch"></div>
+  <div id="list"></div>
+
+  <div class="foot">
+    <p>Program as of publication; some sessions and participants may change. Breakout dinners follow the Chatham House Rule.</p>
+    <div class="links">
+      <a class="reg" href="https://www.tpiaspenforum.tech/register" target="_top">Register</a>
+      <a class="alt" href="https://www.tpiaspenforum.tech/agenda" target="_top">Full site</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Same data source as the main agenda page. If config.js has agendaCsvUrl filled,
+     this page reads the live Google Sheet; otherwise it uses the built-in copy below. -->
+<script src="config.js"></script>
+<script>
+let DATA=[{"label": "Sunday", "weekday": "Sunday", "date": "Aug 16", "sessions": [{"time": "6:00 – 7:30 PM", "format": "", "title": "Welcome Networking Reception", "desc": "", "speakers": ["Scott Wallsten — President and Senior Fellow, Technology Policy Institute"]}]}, {"label": "Monday", "weekday": "Monday", "date": "Aug 17", "sessions": [{"time": "7:30 – 8:00 AM", "format": "", "title": "Breakfast", "desc": "", "speakers": []}, {"time": "8:00 – 8:10 AM", "format": "Plenary", "title": "Welcome Remarks", "desc": "", "speakers": ["Scott Wallsten — President and Senior Fellow, Technology Policy Institute"]}, {"time": "8:10 – 8:50 AM", "format": "Keynote", "title": "AI Innovation, Diffusion, and the Economy", "desc": "", "speakers": ["Shane Greenstein — Martin Marshall Professor of Business Administration, Harvard Business School, Harvard University"]}, {"time": "8:55 – 9:30 AM", "format": "Fireside Chat", "title": "AI and Energy: Economist's View", "desc": "", "speakers": ["Severin Borenstein — E.T. Grether Professor of Business Administration and Public Policy, Faculty Director of the Energy Institute, Haas School of Business, UC Berkeley", "Scott Wallsten — President and Senior Fellow, Technology Policy Institute Moderator"]}, {"time": "9:35 – 10:15 AM", "format": "Discussion", "title": "Powering AI: The Economics of Compute and the Grid", "desc": "", "speakers": ["Marsden Hanna — Head of Sustainability and Energy Policy, Google", "Chuck Hufstetler — Senator, State of Georgia", "Debra Raggio — Executive Vice President & General Counsel, PowerBridge", "Scott Wallsten — President and Senior Fellow, Technology Policy Institute Moderator"]}, {"time": "10:15 – 10:30 AM", "format": "", "title": "Break", "desc": "", "speakers": []}, {"time": "10:30 – 11:15 AM", "format": "Discussion", "title": "Does America Lead in Quantum?", "desc": "", "speakers": ["David D. Awschalom — Liew Family Professor in Quantum Science & Engineering, Director of the Chicago Quantum Institute & Chicago Quantum Exchange, University of Chicago", "Edward Parker — Senior Physical Scientist, RAND", "Elizabeth Rossi — Quantum AI External Affairs, Google Quantum", "Scott Wallsten — President and Senior Fellow, Technology Policy Institute Moderator"]}, {"time": "11:20 AM – 12:05 PM", "format": "Fireside Chat", "title": "Digital Crossroads, From Telecom to Big Tech", "desc": "", "speakers": ["Jonathan Nuechterlein — Nonresident Senior Fellow, TPI; Distinguished Scholar, Competition Law Center, George Washington University", "Howard Shelanski — Co-head, Antitrust & Competition Practice, Davis Polk & Wardwell LLP", "Phil Weiser — Attorney General, State of Colorado Moderator"]}, {"time": "12:10 – 12:55 PM", "format": "Discussion", "title": "Supreme Court Developments", "desc": "", "speakers": ["Ian Gershengorn — Partner, Jenner & Block, LLP", "James Speta — Elizabeth Froehling Horner Professor of Law, Pritzker School of Law, Northwestern University", "Jonathan Nuechterlein — Nonresident Senior Fellow, TPI; Distinguished Scholar, Competition Law Center, George Washington University Moderator"]}, {"time": "1:00 – 1:15 PM", "format": "", "title": "Buffet Lunch", "desc": "Serve yourself from the buffet and eat during the session, which begins at 1:15.", "speakers": []}, {"time": "1:15 – 2:00 PM", "format": "Fireside Chat", "title": "A Fireside Chat with FTC Chairman Andrew Ferguson", "desc": "", "speakers": ["Andrew Ferguson — Chairman, U.S. Federal Trade Commission", "Brian Sullivan — News Anchor & Business Journalist, CNBC Moderator"]}, {"time": "2:00 – 6:00 PM", "format": "", "title": "Afternoon Break", "desc": "", "speakers": [], "link": "https://www.tpiaspenforum.tech/adjourned"}, {"time": "6:00 – 7:00 PM", "format": "", "title": "Networking Reception & Tech Hub Experience", "desc": "", "speakers": []}, {"time": "7:00 – 9:00 PM", "format": "Concurrent Breakout Dinner", "title": "Breakout Session Dinners", "desc": "Chatham House Rule applies. Three concurrent dinner sessions run in parallel.", "speakers": []}, {"time": "Session I", "format": "Breakout", "title": "Spectrum: WRC-27 Countdown and Policy Developments", "desc": "", "speakers": ["Scott K. Bergmann — Senior VP, Regulatory Affairs, CTIA", "Shawn Bone — Senior Director of Public Policy, Verizon Communications", "Adam Cassady — Principal Deputy Assistant Secretary and Deputy Administrator, NTIA", "John Giusti — Chief Regulatory Officer, GSMA; President, GSMA Foundation", "Wolfgang Kopf — SVP Public & Regulatory Affairs, Deutsche Telekom AG", "Tricia Paoletta — Senior Advisor for Spectrum, National Telecommunications and Information Administration", "Megan Stull — Senior Manager, Regulatory Policy & Government Affairs, Apple", "Rikin Thakker — CTO & SVP Technology, NCTA – The Internet & Television Association", "Jennifer Warren — VP Global Regulatory Affairs & Public Policy, Lockheed Martin Corporation", "Sarah Oh Lam — Senior Fellow, Technology Policy Institute Co-Mod", "Shane Tews — Principal, Logan Circle Strategies Co-Mod"]}, {"time": "Session II", "format": "Breakout", "title": "Universal Service Fund Reform", "desc": "", "speakers": ["Will Adams — VP Strategic Policy and Planning, T-Mobile", "David Don", "Justin Faulb — Senior VP of Policy and General Counsel, NTCA – The Rural Broadband Association", "Janice Hauge — Professor and Director of Graduate Admissions, Department of Economics, University of North Texas", "John Lin — Senior Counsel, Committee on Energy and Commerce, U.S. House of Representatives *Pending Ethics Approval", "Carol Mattey — Founder, Mattey Consulting LLC", "Gregory L. Rosston — Gordon Cain Senior Fellow, Stanford Institute for Economic Policy Research Moderator"]}, {"time": "Session III", "format": "Breakout", "title": "Laboratories of Democracy or an American Brussels? States and Digital Regulation", "desc": "", "speakers": ["Andrew DeVore — VP & Associate General Counsel, Amazon", "Margot Kaminski — Moses Lasky Professor of Law, University of Colorado Law School; Director, Privacy Initiative, Silicon Flatirons", "Christopher Yoo — Imasogie Professor in Law and Technology, University of Pennsylvania Carey Law School", "Scott Wallsten — President and Senior Fellow, Technology Policy Institute Moderator"]}]}, {"label": "Tuesday", "weekday": "Tuesday", "date": "Aug 18", "sessions": [{"time": "7:30 – 8:00 AM", "format": "", "title": "Breakfast", "desc": "", "speakers": []}, {"time": "8:00 – 8:40 AM", "format": "Fireside Chat", "title": "Frontier AI and What to Watch in 2027", "desc": "", "speakers": ["Anjney Midha — Founder, AMP PBC", "Scott Wallsten — President & Senior Fellow, Technology Policy Institute Moderator"]}, {"time": "8:45 – 9:30 AM", "format": "Discussion", "title": "A View from the Hill", "desc": "", "speakers": ["Speakers TBA"]}, {"time": "9:30 – 9:45 AM", "format": "", "title": "Break", "desc": "", "speakers": []}, {"time": "9:45 – 10:30 AM", "format": "Discussion", "title": "Overruling Humphrey's Executor: The Implications for Antitrust Enforcement", "desc": "", "speakers": ["Dina Kallay — Deputy Assistant AG for International, Policy and Appellate, Antitrust Division, U.S. DOJ", "William Kovacic — Global Competition Professor of Law and Policy, George Washington University Law School", "Maureen Ohlhausen — Partner & Co-Chair of Antitrust and Competition Practice, Wilson Sonsini Goodrich & Rosati", "Lawrence White — Robert Kavesh Professor of Economics, NYU Stern School of Business", "Thomas Lenard — Senior Fellow and President Emeritus, Technology Policy Institute Moderator"]}, {"time": "10:35 – 10:55 AM", "format": "Fireside Chat", "title": "A Fireside Chat with FCC Commissioner Anna Gomez", "desc": "", "speakers": ["Anna Gomez — Commissioner, U.S. Federal Communications Commission", "Bryan Tramont — Managing Partner, Wilkinson Barker Knauer LLP Moderator"]}, {"time": "11:00 – 11:45 AM", "format": "Discussion", "title": "Does AI Change the Economics of Telecom?", "desc": "", "speakers": ["Harold Feld — Senior Vice President, Public Knowledge", "Giulia McHenry — Senior Vice President for Public Policy, AT&T", "Scott Wallsten — President & Senior Fellow, Technology Policy Institute Moderator"]}, {"time": "11:50 AM – 12:10 PM", "format": "Fireside Chat", "title": "A Fireside Chat with FCC Commissioner Olivia Trusty", "desc": "", "speakers": ["Olivia Trusty — Commissioner, U.S. Federal Communications Commission", "Bryan Tramont — Managing Partner, Wilkinson Barker Knauer LLP Moderator"]}, {"time": "12:10 – 12:25 PM", "format": "", "title": "Buffet Lunch", "desc": "Serve yourself from the buffet and eat during the session, which begins at 12:25.", "speakers": []}, {"time": "12:25 – 1:10 PM", "format": "Discussion", "title": "What Are Cybersecurity's Hardest Problems?", "desc": "", "speakers": ["Elizabeth Chernow — Associate Vice President, Comcast Corporation", "Katerina Megas — Program Manager, Cybersecurity for IoT Program, U.S. National Institute of Standards and Technology", "Alan Raul — Lecturer, Harvard Law School; Board Chair & President, Future of Privacy Forum", "Ari Schwartz — Managing Director of Cybersecurity Services, Venable LLP", "Shane Tews — Principal, Logan Circle Strategies Moderator"]}, {"time": "1:10 – 1:55 PM", "format": "Discussion", "title": "Who Should Regulate the Space Economy?", "desc": "", "speakers": ["Robert McDowell — Chair, Global Communications Practice Group and Partner, Cooley LLP", "Jay Schwarz — Chief, Space Bureau, U.S. Federal Communications Commission", "Clayton Swope — Deputy Director, Aerospace Security Project, Center for Strategic & International Studies", "Scott Wallsten — President and Senior Fellow, Technology Policy Institute Moderator"]}, {"time": "1:55 – 2:00 PM", "format": "Plenary", "title": "Closing Remarks", "desc": "", "speakers": ["Scott Wallsten — President & Senior Fellow, Technology Policy Institute"]}, {"time": "2:00 PM", "format": "", "title": "Adjourn", "desc": "", "speakers": []}]}];
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function parseSp(raw){
+ let str=(''+raw).trim(),note='',mod='';
+ const pi=str.search(/\*?\s*pending/i); if(pi!==-1){note='Pending ethics approval';str=str.slice(0,pi).trim();}
+ if(/(co-?mod(erator)?)$/i.test(str)){mod='Co-moderator';str=str.replace(/[,;]?\s*co-?mod(erator)?$/i,'').trim();}
+ else if(/moderator$/i.test(str)){mod='Moderator';str=str.replace(/[,;]?\s*moderator$/i,'').trim();}
+ let name=str,detail=''; const di=str.search(/\s[\u2014\u2013-]\s/);
+ if(di!==-1){name=str.slice(0,di).trim();detail=str.slice(di+3).trim();}
+ return {name:name,detail:detail,mod:mod,note:note};
+}
+function colorFor(f){
+ if(f==='Keynote'||f==='Fireside Chat'||f==='Plenary')return '#9a2e1e';
+ if(f==='Discussion')return '#23211b';
+ if(f==='Concurrent Breakout Dinner'||f==='Breakout')return '#6f6a3e';
+ return '#8a8371';
+}
+var MUTED=['','Break','Reception','End'];
+var $=function(id){return document.getElementById(id);};
+var day='all';
+
+function abbr(label){
+ var wk={sunday:'Sun',monday:'Mon',tuesday:'Tue',wednesday:'Wed',thursday:'Thu',friday:'Fri',saturday:'Sat'};
+ var k=(label||'').trim().toLowerCase();
+ return wk[k]||((label||'').trim().slice(0,3));
+}
+function dayDateOf(d){return d.dayDate||(d.date||((d.weekday?d.weekday+' \u00b7 ':'')+(d.date||''))||'');}
+
+function sessionHTML(s){
+ var muted=MUTED.indexOf(s.format)!==-1, isBk=s.format==='Breakout';
+ var cls='sess'+(muted?' muted':'')+(isBk?' bk':'');
+ var h='<div class="'+cls+'">';
+ h+='<div class="time">'+esc(s.time)+'</div>';
+ if(s.format){h+='<div class="fmt" style="color:'+colorFor(s.format)+';">'+esc(s.format)+'</div>';}
+ h+='<h3>'+esc(s.title)+'</h3>';
+ if(s.desc){h+='<div class="desc">'+esc(s.desc)+'</div>';}
+ if(s.link){h+='<div class="lnk"><a href="'+s.link+'" target="_top">See ideas for the free afternoon &rarr;</a></div>';}
+ if(s.speakers&&s.speakers.length){
+  h+='<div class="sp">'+s.speakers.map(function(raw){
+   var p=parseSp(raw);
+   var tag=p.mod?'<span class="tag mod">'+p.mod+'</span>':(p.note?'<span class="tag pend">Pending</span>':'');
+   var line='<div><div class="nm">'+esc(p.name)+tag+'</div>';
+   if(p.detail){line+='<div class="rl">'+esc(p.detail)+'</div>';}
+   line+='</div>';
+   return line;
+  }).join('')+'</div>';
+ }
+ return h+'</div>';
+}
+
+function render(){
+ var tabs=[{k:'all',wd:'All',dt:'3 days'}].concat(DATA.map(function(d,i){
+  return {k:i,wd:abbr(d.label),dt:(d.date||dayDateOf(d))};
+ }));
+ $('switch').innerHTML=tabs.map(function(t){
+  var on=(day===t.k);
+  return '<button data-k="'+t.k+'"'+(on?' class="on"':'')+'>'
+   +'<span class="wd">'+esc(t.wd)+'</span><span class="dt">'+esc(t.dt)+'</span></button>';
+ }).join('');
+ Array.prototype.forEach.call($('switch').querySelectorAll('button'),function(b){
+  b.onclick=function(){
+   day=(b.getAttribute('data-k')==='all')?'all':+b.getAttribute('data-k');
+   render();
+   var y=$('list').getBoundingClientRect().top+window.pageYOffset-64;
+   window.scrollTo({top:y<0?0:y,behavior:'smooth'});
+  };
+ });
+ var groups=(day==='all')?DATA:[DATA[day]];
+ $('list').innerHTML=groups.map(function(d){
+  var head=(day==='all')?'<div class="dayh"><span class="wd">'+esc(d.label)+'</span><span class="dt">'+esc(dayDateOf(d))+'</span></div>':'';
+  return head+d.sessions.map(sessionHTML).join('');
+ }).join('');
+}
+render();
+
+// ---- data loader (same Google Sheet + built-in fallback as the main agenda) ----
+var CFG=(window.TPI_DATA||{});
+function tpiParseCSV(t){var rows=[],row=[],f='',i=0,q=false;while(i<t.length){var c=t[i];
+ if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i+=2;continue;}q=false;i++;continue;}f+=c;i++;continue;}
+ if(c=='"'){q=true;i++;continue;}
+ if(c==','){row.push(f);f='';i++;continue;}
+ if(c=='\r'){i++;continue;}
+ if(c=='\n'){row.push(f);rows.push(row);row=[];f='';i++;continue;}
+ f+=c;i++;}
+ if(f!==''||row.length){row.push(f);rows.push(row);}return rows;}
+function tpiRows(txt){var rows=tpiParseCSV(txt).filter(function(r){return r.some(function(c){return c.trim()!=='';});});
+ if(rows.length<2)return[];var head=rows[0].map(function(h){return h.trim().toLowerCase();});
+ return rows.slice(1).map(function(r){var o={};head.forEach(function(h,i){o[h]=(r[i]||'').trim();});return o;});}
+function tpiFetch(url){return fetch(url,{cache:'no-store'}).then(function(res){if(!res.ok)throw 0;return res.text();}).then(tpiRows);}
+function tpiBuildDays(rows){
+ rows=rows.filter(function(r){return (r.title||r.time);});
+ rows.sort(function(a,b){return (parseFloat(a.order)||0)-(parseFloat(b.order)||0);});
+ var map={},order=[];
+ rows.forEach(function(r){var lab=r.day||'';if(!map[lab]){map[lab]={label:lab,dayDate:r.date||'',sessions:[]};order.push(lab);}
+  var sp=(r.speakers||'').split(/\r?\n/).map(function(s){return s.trim();}).filter(Boolean);
+  map[lab].sessions.push({time:r.time||'',format:r.format||'',title:r.title||'',desc:r.description||r.desc||'',link:r.link||'',speakers:sp});});
+ return order.map(function(l){return map[l];});
+}
+(function(){
+ if(CFG.agendaCsvUrl){tpiFetch(CFG.agendaCsvUrl).then(function(rows){
+  var days=tpiBuildDays(rows);var n=days.reduce(function(a,d){return a+d.sessions.length;},0);
+  if(n){DATA=days;}console.log('TPI agenda source:',n?'sheet':'fallback');render();
+ }).catch(function(e){console.log('TPI agenda source: fallback',e);render();});}
+ else{console.log('TPI agenda source: built-in');}
+})();
+</script>
+</body>
+</html>
